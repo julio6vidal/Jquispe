@@ -1,0 +1,62 @@
+examen parcial nota de 14,13: otros 6 a 7 puntos 
+				asistencia
+			      - participacion	
+			      - micro exposicion
+				noticias:max de 10 lineas que no pase de 1 hoja 
+
+										resumen
+										comentario
+										link
+					
+				
+
+				p voluntario			
+ing. Silvia M. Rodriguez Paredes
+silviamarp@gmail.com
+asunto:nombre curso,codigo de preferencia,nombre
+subir proyectos a GIT:Ver que es git,crear usuario,hasta el miercoles
+
+cheat sheet python
+
+package sesion01;
+
+public class cPersona {
+
+    public cPersona() {
+        
+        super();
+    }
+
+
+    public void mostrar_nombre() {
+        System.out.println("hola mundo!. mi nombre es"+"bryan");
+      
+    }
+
+
+    public static void main(String[] args) {
+          cPersona myPersona= new cPersona() ;
+        for (int i = 0; i < 3;i++) {
+                myPersona.mostrar_nombre();
+                 ;
+       }
+
+    }
+}
+FORI=> CTRL + ENTER = UN FOR COMPLETO
+MVC modelo vista controlador
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

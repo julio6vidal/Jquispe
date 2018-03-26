@@ -1,0 +1,102 @@
+package sesion1;
+
+public class alumno {
+        String sNombre;
+         int nEdad;
+         
+    public void setSNombre(String sNombre) {
+        this.sNombre = sNombre;
+    }
+
+    public alumno(String sNombre, int nEdad) {
+        super();
+        this.sNombre = sNombre;
+        this.nEdad = nEdad;
+    }
+
+    public String getSNombre() {
+        return sNombre;
+    }
+
+    public void setNEdad(int nEdad) {
+        this.nEdad = nEdad;
+    }
+
+    public int getNEdad() {
+        return nEdad;
+    }
+    
+    public alumno() {
+        
+        super();
+    }
+    public String saludoInit(String psNombre) {
+
+        return " hola !!!.que tal " + psNombre;
+    }
+----------------------------------------------------------refactor rename-----------------------------
+
+    public String saludoBienvenida(String psNombre) {
+
+        return " hola !!!.que tal " + psNombre;
+    }
+------------------------------------------------------------------------------------------------------
+    public static void main(String[] args) {
+        alumno alumno = new alumno();
+
+        for (int i = 0; i < 3; i++) {
+
+            System.out.println(i + alumno.saludoBienvenida("Bryan"));
+        }
+    }
+
+
+TAREA NIVEL 0
+CLASE PROFESOR
+FECHA INGRESO
+CUANTOS CURSOS TIENE?
+FECHA SALIDA CAUNTOS DIAS TENGO EN TOTAL.
+-------------------------------------------------------
+PUNTO EXTRA
+HERENCIA DOCENTE TIEMPO COMPLETO
+		 TIEMPO PARCIAL
+		 ALUMNO PRESENCIAL
+		 ALUMNO DISTANCIA
+CORREO GIP HUT
+ASUNTO NOMBRE CURSO
+MENSAJE NOMBRE COMPLETO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
