@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="empleados.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/templates/tabletFirstTemplate.jspx" id="pt1">
+                <f:facet name="header"/>
+                <f:facet name="status"/>
+                <f:facet name="appNav"/>
+                <f:facet name="globalLinks"/>
+                <f:facet name="footer"/>
+                <f:facet name="center"/>
+                <f:facet name="start"/>
+                <f:facet name="end">
+                    <af:panelFormLayout id="pfl1">
+                        <af:inputText value="#{bindings.firstName.inputValue}" label="#{bindings.firstName.hints.label}"
+                                      required="#{bindings.firstName.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.firstName.hints.displayWidth}"
+                                      maximumLength="#{bindings.firstName.hints.precision}"
+                                      shortDesc="#{bindings.firstName.hints.tooltip}" id="it1">
+                            <f:validator binding="#{bindings.firstName.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.lastName.inputValue}" label="#{bindings.lastName.hints.label}"
+                                      required="#{bindings.lastName.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.lastName.hints.displayWidth}"
+                                      maximumLength="#{bindings.lastName.hints.precision}"
+                                      shortDesc="#{bindings.lastName.hints.tooltip}" id="it2">
+                            <f:validator binding="#{bindings.lastName.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.title.inputValue}" label="#{bindings.title.hints.label}"
+                                      required="#{bindings.title.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.title.hints.displayWidth}"
+                                      maximumLength="#{bindings.title.hints.precision}"
+                                      shortDesc="#{bindings.title.hints.tooltip}" id="it3">
+                            <f:validator binding="#{bindings.title.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.email.inputValue}" label="#{bindings.email.hints.label}"
+                                      required="#{bindings.email.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.email.hints.displayWidth}"
+                                      maximumLength="#{bindings.email.hints.precision}"
+                                      shortDesc="#{bindings.email.hints.tooltip}" id="it4">
+                            <f:validator binding="#{bindings.email.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.mobile.inputValue}" label="#{bindings.mobile.hints.label}"
+                                      required="#{bindings.mobile.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.mobile.hints.displayWidth}"
+                                      maximumLength="#{bindings.mobile.hints.precision}"
+                                      shortDesc="#{bindings.mobile.hints.tooltip}" id="it5">
+                            <f:validator binding="#{bindings.mobile.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.phone.inputValue}" label="#{bindings.phone.hints.label}"
+                                      required="#{bindings.phone.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.phone.hints.displayWidth}"
+                                      maximumLength="#{bindings.phone.hints.precision}"
+                                      shortDesc="#{bindings.phone.hints.tooltip}" id="it6">
+                            <f:validator binding="#{bindings.phone.validator}"/>
+                        </af:inputText>
+                    </af:panelFormLayout>
+                </f:facet>
+            </af:pageTemplate>
+            <af:masonryLayout id="ml1">
+                <af:panelGroupLayout id="pgl1" styleClass="AFMasonryTileSize2x1 tileStyle " layout="vertical"/>
+                <af:panelGroupLayout id="pgl2" styleClass="AFMasonryTileSize2x1 tileStyle " layout="vertical"/>
+                <af:panelGroupLayout id="pgl3" styleClass="AFMasonryTileSize2x2 tileStyle " layout="vertical"/>
+            </af:masonryLayout>
+        </af:form>
+    </af:document>
+</f:view>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="departamentosPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="HRService" id="HRServiceIterator"/>
+    <accessorIterator MasterBinding="HRServiceIterator" Binds="departments" RangeSize="25" DataControl="HRService"
+                      BeanClass="oracle.workbetter.model.Department" id="departmentsIterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="departmentsIterator" id="deptName">
+      <AttrNames>
+        <Item Value="deptName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="departmentsIterator" id="address">
+      <AttrNames>
+        <Item Value="address"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="departmentsIterator" id="city">
+      <AttrNames>
+        <Item Value="city"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="departmentsIterator" id="state">
+      <AttrNames>
+        <Item Value="state"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="departmentsIterator" id="country">
+      <AttrNames>
+        <Item Value="country"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="departmentsIterator" id="postal">
+      <AttrNames>
+        <Item Value="postal"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="departamentos.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/templates/tabletFirstTemplate.jspx" id="pt1">
+                <f:facet name="header"/>
+                <f:facet name="status"/>
+                <f:facet name="appNav"/>
+                <f:facet name="globalLinks"/>
+                <f:facet name="footer"/>
+                <f:facet name="center"/>
+                <f:facet name="start"/>
+                <f:facet name="end">
+                    <af:panelFormLayout id="pfl1">
+                        <af:inputText value="#{bindings.deptName.inputValue}" label="#{bindings.deptName.hints.label}"
+                                      required="#{bindings.deptName.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.deptName.hints.displayWidth}"
+                                      maximumLength="#{bindings.deptName.hints.precision}"
+                                      shortDesc="#{bindings.deptName.hints.tooltip}" id="it1">
+                            <f:validator binding="#{bindings.deptName.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.address.inputValue}" label="#{bindings.address.hints.label}"
+                                      required="#{bindings.address.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.address.hints.displayWidth}"
+                                      maximumLength="#{bindings.address.hints.precision}"
+                                      shortDesc="#{bindings.address.hints.tooltip}" id="it2">
+                            <f:validator binding="#{bindings.address.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.city.inputValue}" label="#{bindings.city.hints.label}"
+                                      required="#{bindings.city.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.city.hints.displayWidth}"
+                                      maximumLength="#{bindings.city.hints.precision}"
+                                      shortDesc="#{bindings.city.hints.tooltip}" id="it3">
+                            <f:validator binding="#{bindings.city.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.state.inputValue}" label="#{bindings.state.hints.label}"
+                                      required="#{bindings.state.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.state.hints.displayWidth}"
+                                      maximumLength="#{bindings.state.hints.precision}"
+                                      shortDesc="#{bindings.state.hints.tooltip}" id="it4">
+                            <f:validator binding="#{bindings.state.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.country.inputValue}" label="#{bindings.country.hints.label}"
+                                      required="#{bindings.country.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.country.hints.displayWidth}"
+                                      maximumLength="#{bindings.country.hints.precision}"
+                                      shortDesc="#{bindings.country.hints.tooltip}" id="it5">
+                            <f:validator binding="#{bindings.country.validator}"/>
+                        </af:inputText>
+                        <af:inputText value="#{bindings.postal.inputValue}" label="#{bindings.postal.hints.label}"
+                                      required="#{bindings.postal.hints.mandatory}" readOnly="true"
+                                      columns="#{bindings.postal.hints.displayWidth}"
+                                      maximumLength="#{bindings.postal.hints.precision}"
+                                      shortDesc="#{bindings.postal.hints.tooltip}" id="it6">
+                            <f:validator binding="#{bindings.postal.validator}"/>
+                        </af:inputText>
+                    </af:panelFormLayout>
+                </f:facet>
+                <f:attribute name="endWidth" value="0"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>

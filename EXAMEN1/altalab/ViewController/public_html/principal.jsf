@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="principal.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <!-- Header -->
+                        <af:outputText value="universidad Alas peruanas-desarrollo cliente servidor " id="ot1"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc3">
+                        <!-- Content -->
+                        <af:button text="empleados" id="b2" action="*go_empleados"/>
+                        <af:button text="departamento" id="b1" action="*go_departamento"/>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="50px" id="gr3">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <!-- Footer -->
+                        <af:outputText value="JOSE LUIS BUSTAMANTE Y RIVERO" id="ot2"/>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>
